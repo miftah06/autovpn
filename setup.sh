@@ -1,19 +1,10 @@
 #!/bin/bash
+sudo apt-get install dos2unix -y
 
 # Fungsi yield
 function yield() {
     echo "Menghasilkan output..."
 }
-
-# Implementasi fitur-fitur sebelumnya
-source domain.sh
-source thread.py
-source udp-custom.py
-source all-tcp.sh
-source socket.sh
-source port.sh
-source vpn.sh
-
 # Fungsi instalasi VPN lengkap beserta konfigurasinya
 function instalasi_vpn_lengkap() {
     # Installasi VPN
@@ -26,26 +17,23 @@ function instalasi_vpn_lengkap() {
 # Fungsi setup
 function setup() {
     # Menjalankan skrip domain.sh
-    domain_sh
-
-    # Menjalankan thread.py
-    python thread.py
-
-    # Menjalankan udp-custom.py
-    python udp-custom.py
-
-    # Menjalankan all-tcp.sh
-    bash all-tcp.sh
-
-    # Menjalankan socket.sh
-    bash socket.sh
-
-    # Menjalankan port.sh
-    bash port.sh
+	python3 thread.py
+	python3 udp-custom.py
+	dos2unix all-tcp.sh
+	dos2unix socket.sh
+	dos2unix port.sh
+	dos2unix vpn.sh
+	dos2unix setup.sh
 
     # Menjalankan instalasi VPN lengkap beserta konfigurasinya
     pwd
 }
+# Implementasi fitur-fitur sebelumnya
+source domain.sh
+source all-tcp.sh
+source socket.sh
+source port.sh
+source vpn.sh
 
 # Pemrosesan input
 txt=("$@")
