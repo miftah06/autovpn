@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt-get install dos2unix -y
+sudo apt-get install dos2unix
 
 # Fungsi yield
 function yield() {
