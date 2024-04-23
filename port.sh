@@ -42,7 +42,7 @@ certbot certonly --nginx -d $domain --non-interactive --agree-tos --email your_e
 # Konfigurasi Nginx untuk WebSocket dan SSL
 cat <<EOF > /etc/nginx/sites-available/default
 server {
-    listen 443 ssl http2;
+    listen 4443 ssl http2;
     server_name $domain;
 
     ssl_certificate /etc/letsencrypt/live/$domain/fullchain.pem;
