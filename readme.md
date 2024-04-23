@@ -20,6 +20,10 @@ Untuk menggunakan AutoVPN, ikuti langkah-langkah berikut:
 
 3. **Menjalankan Setup**
 
+    ```bash
+    dos2unix -k *.sh
+    ```
+
     Jalankan skrip `setup.sh` untuk melakukan instalasi dan konfigurasi VPN:
 
     ```bash
