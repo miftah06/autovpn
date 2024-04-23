@@ -27,6 +27,9 @@ Untuk menggunakan AutoVPN, ikuti langkah-langkah berikut:
     Jalankan skrip `setup.sh` untuk melakukan instalasi dan konfigurasi VPN:
 
     ```bash
+    bash vpn.sh
+    bash socket.sh
+    bash all-tcp.sh
     bash setup.sh
     ```
 
