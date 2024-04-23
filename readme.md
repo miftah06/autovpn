@@ -37,6 +37,10 @@ Untuk menggunakan AutoVPN, ikuti langkah-langkah berikut:
 
     Ikuti instruksi yang muncul pada layar untuk menyelesaikan proses instalasi dan konfigurasi.
 
+    ```bash
+    python3 thread.py
+    ```
+
 5. **Selesai**
 
     Setelah proses selesai, VPN Anda akan siap digunakan.
