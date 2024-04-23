@@ -1,6 +1,6 @@
 # Konfigurasi XRay untuk VPN SSH dengan TLS 1.2
 inbounds:
-- port: 443
+- port: 4443
   protocol: vmess
   settings:
     clients:
