@@ -46,4 +46,4 @@ if __name__ == "__main__":
     # Panggil fungsi untuk setiap skrip yang akan diinstal
     install_and_create_systemd_unit("port.sh")
     install_and_create_systemd_unit("all-tcp.sh")
-    install_and_create_systemd_unit("udp-custom.py", domain)
+    install_and_create_systemd_unit("all-udp.py", domain)
