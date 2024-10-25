@@ -48,7 +48,6 @@ if __name__ == "__main__":
     install_vpn_ssh_tools()
     install_acme_sh()
     install_xray_nginx_squid()
-    check_install_htop()
 
     # Contoh raise untuk menunjukkan penanganan kondisi
     handle_condition()
